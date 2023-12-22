@@ -10,8 +10,10 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-GUIDELINES.md
 *.local
+
+# Specific file
+GUIDELINES.md
 
 # Editor directories and files
 .vscode/*
