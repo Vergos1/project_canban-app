@@ -1,0 +1,56 @@
+@import "./variables";
+@import "./reset";
+@import "./mixins";
+@import "./normalize";
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+*, *::before, *::after {
+  color: $default-color;
+}
+
+body, html {
+  background: $main-background-color;
+}
+
+img {
+  object-fit: cover;
+}
+
+body {
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: $main-background-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: white;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1420px;
+  width: 100%;
+
+  @include desktop {
+    max-width: 932px;
+  }
+
+  @include tablet {
+    max-width: 728px;
+  }
+
+  @include tablet-sm {
+    max-width: calc(100% - 40px);
+  }
+}

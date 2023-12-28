@@ -1,0 +1,72 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 18rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+
+.columnName {
+  color: $selected-color;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.columnNameEdit {
+  //color: $selected-color;
+  background: none;
+  resize: none;
+  max-width: 75px;
+  height: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.headerItem {
+  @include flex-v-center;
+  gap: 10px;
+}
+
+.taskCount {
+  @include flex-all-center;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $black-color;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.addButton {
+  @include flex-all-center;
+  padding: 4px;
+  margin-left: auto;
+  color: $default-color;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $block-background-color;
+  }
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+}
+
+.tasks {
+  flex-direction: column;
+  padding-bottom: 0.5rem;
+  overflow: auto;
+}

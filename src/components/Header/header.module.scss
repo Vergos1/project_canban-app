@@ -1,0 +1,84 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.header {
+  min-width: 100vw;
+  padding: 20px 0;
+  background-color: $block-background-color;
+}
+
+.headerWrapper {
+  @include flex-all-sb;
+  gap: 32px;
+  flex-shrink: 0;
+}
+
+.headerIcon {
+  width: 32px;
+  height: 32px;
+  color: $default-color;
+  stroke: currentColor;
+}
+
+.headerSearchInput {
+  @include flex-all-center;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: $selected-color;
+  background-color: $inputs-background-color;
+  border-radius: 12px;
+
+  &::placeholder {
+    color: $hidden-color;
+  }
+}
+
+.headerNavigationItem {
+  @include flex-v-center;
+  gap: 16px;
+}
+
+.Navbar {
+  @include flex-v-center;
+  gap: 8%;
+}
+
+.headerLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: $selected-color;
+}
+
+.headerLinkInactive {
+  color: $default-color;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: $selected-color;
+  }
+}
+
+.headerAuthGoogle {
+  margin-left: auto;
+}
+
+.headerProfileButton {
+  background: $primary-block-background-color;
+  color: $selected-color;
+  font-size: 14px;
+  font-weight: 600;
+  @include flex-v-center;
+  gap: 5px;
+  margin-left: auto;
+  border-radius: 8px;
+  padding: 2px 8px;
+  cursor: pointer;
+  border: 2px solid $secondary-color;
+
+  img {
+    object-fit: cover;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+  }
+}

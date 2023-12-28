@@ -1,0 +1,87 @@
+.header {
+  min-width: 100vw;
+  padding: 20px 0;
+  background-color: #140A1E;
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-shrink: 0;
+}
+
+.headerIcon {
+  width: 32px;
+  height: 32px;
+  color: #B8C7D1;
+  stroke: currentColor;
+}
+
+.headerSearchInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #2B1D39;
+  border-radius: 12px;
+}
+.headerSearchInput::placeholder {
+  color: #64596E;
+}
+
+.headerNavigationItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  gap: 8%;
+}
+
+.headerLink {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.headerLinkInactive {
+  color: #B8C7D1;
+  transition: color 0.2s ease-in-out;
+}
+.headerLinkInactive:hover {
+  color: #ffffff;
+}
+
+.headerAuthGoogle {
+  margin-left: auto;
+}
+
+.headerProfileButton {
+  background: #261339;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+  border-radius: 8px;
+  padding: 2px 8px;
+  cursor: pointer;
+  border: 2px solid #2A2132;
+}
+.headerProfileButton img {
+  object-fit: cover;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+}
+
+/*# sourceMappingURL=header.module.css.map */

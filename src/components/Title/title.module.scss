@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.titleWrapper {
+  margin: 42px 0;
+}
+
+.title {
+  color: $selected-color;
+  font-size: 28px;
+  font-weight: 700;
+}

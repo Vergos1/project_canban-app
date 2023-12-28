@@ -1,0 +1,74 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 18rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+
+.columnName {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.columnNameEdit {
+  background: none;
+  resize: none;
+  max-width: 75px;
+  height: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.headerItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.taskCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  margin-left: auto;
+  color: #B8C7D1;
+  border-radius: 4px;
+}
+.addButton:hover {
+  background-color: #140A1E;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+}
+
+.tasks {
+  flex-direction: column;
+  padding-bottom: 0.5rem;
+  overflow: auto;
+}
+
+/*# sourceMappingURL=taskColumn.module.css.map */
