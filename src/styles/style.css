@@ -41,7 +41,6 @@ button:focus {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #B8C7D1;
 }
 
 a,
@@ -402,20 +401,41 @@ template {
   display: none;
 }
 
+.mantine-Select-option:hover {
+  background-color: #1d1326;
+}
+.mantine-Select-option:hover span {
+  color: #ffffff;
+}
+
+.mantine-Select-dropdown::-webkit-scrollbar, .mantine-Input-input::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+.mantine-Select-dropdown::-webkit-scrollbar-thumb, .mantine-Input-input::-webkit-scrollbar-thumb {
+  background-color: #100718;
+}
+
+.mantine-CloseButton-root svg, .mantine-Input-section svg {
+  color: #ffffff;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-*, *::before, *::after {
-  color: #B8C7D1;
-}
-
 body, html {
   background: #1A0D26;
+  color: #B8C7D1;
 }
 
 img {
   object-fit: cover;
+}
+
+label {
+  color: #ffffff;
 }
 
 body {

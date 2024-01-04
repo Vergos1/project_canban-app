@@ -1,0 +1,27 @@
+.mantine-Select-option {
+  &:hover {
+    background-color: $inputs-hover-background-color;
+
+    span {
+      color: $selected-color;
+    }
+  }
+}
+
+.mantine-Select-dropdown, .mantine-Input-input {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $inputs-background-color2;
+  }
+}
+
+.mantine-CloseButton-root, .mantine-Input-section {
+  svg {
+    color: $selected-color;
+  }
+}

@@ -9,6 +9,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  word-break: break-word;
 }
 .taskCard:hover {
   opacity: 80%;
@@ -50,20 +51,12 @@
   border-radius: 16px;
 }
 
-.backend {
-  color: #e1e1e1;
-  background-color: #100a17;
-}
-
-.frontend {
-  color: #100a17;
-  background-color: #e1e1e1;
-}
-
-.title {
-  margin-top: 0.75rem;
-  font-size: 0.875rem;
+.taskDescription {
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: normal;
   font-weight: 500;
+  line-height: 14px;
 }
 
 .details {

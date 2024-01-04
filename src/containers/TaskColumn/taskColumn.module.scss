@@ -12,8 +12,7 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  height: 2.5rem;
-  padding: 0.5rem;
+  height: 40px;
 }
 
 .columnName {
@@ -24,10 +23,10 @@
 
 .columnNameEdit {
   //color: $selected-color;
+  color: $selected-color;
   background: none;
-  resize: none;
-  max-width: 75px;
-  height: 20px;
+  max-width: 150px;
+  height: 40px;
   font-weight: 600;
   font-size: 16px;
 }
@@ -39,12 +38,12 @@
 
 .taskCount {
   @include flex-all-center;
-  padding: 4px 8px;
+  padding: 2px 5px;
   font-size: 14px;
   font-weight: 600;
   color: $black-color;
   background-color: white;
-  border-radius: 100%;
+  border-radius: 4px;
 }
 
 .addButton {

@@ -12,6 +12,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  word-break: break-word;
 
   &:hover {
     opacity: 80%;
@@ -53,23 +54,15 @@
   border-radius: 16px;
 }
 
-//tags
-.backend {
-  color: $backend-color;
-  background-color: $backend-background-color;
-}
-
-.frontend {
-  color: $frontend-color;
-  background-color: $frontend-background-color;
-}
 
 //tags
 
-.title {
-  margin-top: 0.75rem;
-  font-size: 0.875rem;
+.taskDescription {
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: normal;
   font-weight: 500;
+  line-height: 14px;
 }
 
 .details {

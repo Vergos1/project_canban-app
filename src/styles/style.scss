@@ -2,21 +2,23 @@
 @import "./reset";
 @import "./mixins";
 @import "./normalize";
+@import "./mantine/mantineStyles.scss";
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-*, *::before, *::after {
-  color: $default-color;
-}
-
 body, html {
   background: $main-background-color;
+  color: $default-color;
 }
 
 img {
   object-fit: cover;
+}
+
+label {
+  color: $selected-color;
 }
 
 body {

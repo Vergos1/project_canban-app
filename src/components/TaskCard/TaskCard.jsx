@@ -6,8 +6,14 @@ const TaskCard = ({ task }) => {
   return (
     <div className={styles.taskCard} draggable='true'>
       <div className={styles.taskCardHeader}>
-          <span className={`${styles.tag} ${styles[task.title]}`}>
-            {task.title}
+          <span
+            style={{
+              backgroundColor: task.badgeBackground,
+              color: task.badgeColor,
+            }}
+            className={`${styles.tag}`}
+          >
+            {task.roleName}
           </span>
         <button className={styles.closeButton}>
           <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'
@@ -17,9 +23,9 @@ const TaskCard = ({ task }) => {
         </button>
       </div>
 
-      <h4 className={styles.title}>
+      <p className={styles.taskDescription}>
         {task.description}
-      </h4>
+      </p>
       <div className={styles.details}>
         <div className={styles.detailItem}>
           <svg className={styles.detailIcon} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor'>
@@ -52,7 +58,8 @@ const TaskCard = ({ task }) => {
         </span>
         </div>
 
-        <img className={styles.userAvatar} src={task.userImage} alt='User' />
+        <span>{task.responsible}</span>
+        {/*<img className={styles.userAvatar} src={task.userImage} alt='User' />*/}
       </div>
     </div>);
 };

@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.modalWrapper {
+  @include gap(18px);
+}
+
+.modalForm {
+  @include gap(32px);
+}
+
+.colorsPickerWrapper {
+  @include flex-v-center;
+  gap: 20px;
+  @include mobile-sm {
+    align-items: flex-start;
+    flex-direction: column;
+    & > * {
+      width: 100%;
+    }
+  }
+}
+
+.createButtonModal {
+  @include disabled-mobile-hover;
+  @include flex-v-center;
+  margin: auto;
+  background-color: $button-background-color;
+  padding: 10px 42px;
+  border-radius: 4px;
+  color: $selected-color;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: 0.25s ease-in-out;
+
+  &:hover {
+    background-color: $button-hover-background-color;
+  }
+}

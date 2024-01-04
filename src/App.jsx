@@ -1,4 +1,5 @@
 import '@mantine/core/styles.css';
+import '@mantine/dates/styles.css';
 import './styles/style.scss';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './Layout.jsx';

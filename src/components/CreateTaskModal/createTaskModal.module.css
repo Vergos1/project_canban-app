@@ -1,0 +1,57 @@
+.modalWrapper {
+  display: grid;
+  gap: 18px;
+}
+
+.modalForm {
+  display: grid;
+  gap: 32px;
+}
+
+.colorsPickerWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 480px) {
+  .colorsPickerWrapper {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .colorsPickerWrapper > * {
+    width: 100%;
+  }
+}
+
+.createButtonModal {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background-color: #2F2752;
+  padding: 10px 42px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: 0.25s ease-in-out;
+}
+@media (hover: none) and (pointer: coarse) {
+  .createButtonModal:hover {
+    cursor: default;
+    transform: none;
+  }
+  .createButtonModal:active {
+    cursor: default;
+    transform: none;
+  }
+  .createButtonModal:focus {
+    cursor: default;
+    transform: none;
+  }
+}
+.createButtonModal:hover {
+  background-color: #2A2132;
+}
+
+/*# sourceMappingURL=createTaskModal.module.css.map */
