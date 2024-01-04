@@ -2,7 +2,7 @@ import styles from './taskColumn.module.scss';
 import { useState } from 'react';
 import { useClickOutside, useDisclosure } from '@mantine/hooks';
 import TaskCard from '../../components/TaskCard/TaskCard.jsx';
-import CreateTaskModal from '../../components/CreateTastModal/CreateTaskModal.jsx';
+import CreateTaskModal from '../../components/CreateTaskModal/CreateTaskModal.jsx';
 
 
 
