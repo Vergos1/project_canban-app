@@ -20,6 +20,14 @@
   }
 }
 
+.mantine-CloseButton-root {
+  background: transparent;
+
+  &:hover {
+    background: $block-background-color;
+  }
+}
+
 .mantine-CloseButton-root, .mantine-Input-section {
   svg {
     color: $selected-color;

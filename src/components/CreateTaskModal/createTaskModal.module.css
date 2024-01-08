@@ -8,6 +8,10 @@
   gap: 32px;
 }
 
+.error {
+  color: #ec2222;
+}
+
 .colorsPickerWrapper {
   display: flex;
   align-items: center;

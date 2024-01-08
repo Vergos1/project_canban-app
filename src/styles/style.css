@@ -417,12 +417,23 @@ template {
   background-color: #100718;
 }
 
+.mantine-CloseButton-root {
+  background: transparent;
+}
+.mantine-CloseButton-root:hover {
+  background: #140A1E;
+}
+
 .mantine-CloseButton-root svg, .mantine-Input-section svg {
   color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+a {
+  color: #ffffff;
 }
 
 body, html {
@@ -455,6 +466,7 @@ body::-webkit-scrollbar-thumb {
 
 .container {
   margin: 0 auto;
+  padding: 20px 0 100px 0;
   max-width: 1420px;
   width: 100%;
 }

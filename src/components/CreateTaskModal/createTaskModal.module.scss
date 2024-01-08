@@ -9,6 +9,10 @@
   @include gap(32px);
 }
 
+.error {
+  color: $error-color;
+}
+
 .colorsPickerWrapper {
   @include flex-v-center;
   gap: 20px;

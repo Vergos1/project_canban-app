@@ -1,10 +1,11 @@
-// import notifications from "./services/notifications";
 import axios from 'axios';
+import authService from './services/auth.js';
 
 
 
-export const BASE_API_URL = '9f9e5ac8403e.ngrok.app';
+export const BASE_API_URL = 'vasyleoo2-001-site1.anytempurl.com';
 export const API_URL = `https://${BASE_API_URL}/api`;
+export const TOKEN = 'token';
 
 export const AXIOS_INSTANCE = axios.create({
   baseURL: API_URL,
@@ -14,7 +15,7 @@ export const AXIOS_INSTANCE = axios.create({
 });
 
 const api = {
-// helper
+  auth: authService,
 };
 
 export default api;

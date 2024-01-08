@@ -21,6 +21,16 @@ const CustomTheme = createTheme({
 
   },
   components: {
+    Paper: {
+      defaultProps: {
+        styles: {
+          root: {
+            border: 'none',
+            backgroundColor: '#261339',
+          },
+        },
+      },
+    },
     Modal: {
       defaultProps: {
         styles: {
@@ -51,7 +61,50 @@ const CustomTheme = createTheme({
             border: 'none',
             marginTop: '5px',
             padding: '5px 10px',
-            height: 'max-content',
+            height: '44px',
+            color: '#ffffff',
+            backgroundColor: '#100718',
+            '&:placeholder': {
+              color: '#64596E',
+            },
+          },
+        },
+      },
+    },
+    Title: {
+      defaultProps: {
+        styles: {
+          root: {
+            color: '#ffffff',
+          },
+        },
+      },
+    },
+    Button: {
+      defaultProps: {
+        styles: {
+          root: {
+            border: 'none',
+            marginTop: '5px',
+            padding: '5px 10px',
+            height: '44px',
+            color: '#ffffff',
+            backgroundColor: '#2F2752',
+            '&:hover': {
+              backgroundColor: '#2A2132',
+            },
+          },
+        },
+      },
+    },
+    PasswordInput: {
+      defaultProps: {
+        styles: {
+          input: {
+            border: 'none',
+            marginTop: '5px',
+            padding: '5px 10px',
+            height: '44px',
             color: '#ffffff',
             backgroundColor: '#100718',
             '&:placeholder': {

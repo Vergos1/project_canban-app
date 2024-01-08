@@ -7,6 +7,10 @@
   background-color: $block-background-color;
 }
 
+.headerContainer {
+  padding: 0;
+}
+
 .headerWrapper {
   @include flex-all-sb;
   gap: 32px;
@@ -60,6 +64,8 @@
 
 .headerAuthGoogle {
   margin-left: auto;
+  @include flex-v-center;
+  gap: 20px;
 }
 
 .headerProfileButton {

@@ -4,6 +4,10 @@
   background-color: #140A1E;
 }
 
+.headerContainer {
+  padding: 0;
+}
+
 .headerWrapper {
   display: flex;
   align-items: center;
@@ -61,6 +65,9 @@
 
 .headerAuthGoogle {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .headerProfileButton {

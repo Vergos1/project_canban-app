@@ -13,7 +13,7 @@ const TaskCard = ({ task }) => {
             }}
             className={`${styles.tag}`}
           >
-            {task.roleName}
+            {task.badgeName}
           </span>
         <button className={styles.closeButton}>
           <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'
@@ -58,7 +58,7 @@ const TaskCard = ({ task }) => {
         </span>
         </div>
 
-        <span>{task.responsible}</span>
+        <span className={styles.responsible}>{task.responsible}</span>
         {/*<img className={styles.userAvatar} src={task.userImage} alt='User' />*/}
       </div>
     </div>);

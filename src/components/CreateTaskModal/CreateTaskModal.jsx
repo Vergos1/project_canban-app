@@ -5,7 +5,8 @@ import { DateInput } from '@mantine/dates';
 import { useDispatch } from 'react-redux';
 import { createTask } from '../../store/slices/tasks.slice.js';
 import CustomTheme from '../../config/MantineConfig/MantineConfig.jsx';
-// import CustomInput from '../CustomInput/CustomInput.jsx';
+
+
 
 const CreateTaskModal = ({ opened, close, users }) => {
   const dispatch = useDispatch();
@@ -38,7 +39,7 @@ const CreateTaskModal = ({ opened, close, users }) => {
       //todo поменять заглушку с айдишником
       date: taskDate,
       responsible: user,
-      roleName: role.toLowerCase(),
+      badgeName: role.toLowerCase(),
       badgeBackground: roleBackgroundColor,
       badgeColor: roleTextColor,
       description: description,
@@ -139,12 +140,13 @@ const CreateTaskModal = ({ opened, close, users }) => {
             minRows={2}
             maxRows={4}
           />
+          {!valid && (
+            <div className={styles.error}>
+              All fields are required
+            </div>
+          )}
         </div>
-        {!valid && (
-          <div className={styles.error}>
-            All fields are required
-          </div>
-        )}
+
         <button type='button' onClick={handleSubmit} className={styles.createButtonModal}>
           Create
         </button>
