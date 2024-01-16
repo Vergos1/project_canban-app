@@ -1,3 +1,7 @@
+:root {
+  --loader-color: #fff;
+}
+
 .modalWrapper {
   display: grid;
   gap: 18px;

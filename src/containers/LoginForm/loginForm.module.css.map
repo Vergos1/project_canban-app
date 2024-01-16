@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../styles/variables.scss","loginForm.module.scss"],"names":[],"mappings":"AAAA;EACE;;;ACCF;EACE;EACA,ODaa;ECZb;;AAEA;EACE,ODOa;;;ACHjB;EACE,YDHwB;ECIxB,ODCe;ECAf;EACA;EACA;;AAEA;EACE,YDT4B","file":"loginForm.module.css"}

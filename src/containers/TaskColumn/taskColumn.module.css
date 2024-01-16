@@ -1,3 +1,7 @@
+:root {
+  --loader-color: #fff;
+}
+
 .column {
   display: flex;
   flex-direction: column;

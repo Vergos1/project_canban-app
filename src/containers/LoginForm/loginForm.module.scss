@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.link {
+  font-weight: 600;
+  color: $hidden-color;
+  transition: 0.25s ease;
+
+  &:hover {
+    color: $selected-color;
+  }
+}
+
+.buttonSubmit {
+  background: $button-background-color;
+  color: $selected-color;
+  border-radius: 4px;
+  padding: 10px 32px;
+  transition: 0.3s;
+
+  &:hover {
+    background: $button-hover-background-color;
+  }
+}

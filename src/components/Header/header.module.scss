@@ -76,8 +76,8 @@
   @include flex-v-center;
   gap: 5px;
   margin-left: auto;
-  border-radius: 8px;
-  padding: 2px 8px;
+  border-radius: 100%;
+  padding: 2px 2px;
   cursor: pointer;
   border: 2px solid $secondary-color;
 

@@ -1,3 +1,7 @@
+:root {
+  --loader-color: #fff;
+}
+
 .taskCard {
   position: relative;
   display: flex;

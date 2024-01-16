@@ -1,0 +1,25 @@
+:root {
+  --loader-color: #fff;
+}
+
+.link {
+  text-decoration: underline;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.buttonSubmit {
+  background: #2F2752;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 10px 32px;
+  transition: 0.3s;
+  width: 100%;
+  margin-top: 24px;
+}
+.buttonSubmit:hover {
+  background: #2A2132;
+}
+
+/*# sourceMappingURL=registrationForm.module.css.map */

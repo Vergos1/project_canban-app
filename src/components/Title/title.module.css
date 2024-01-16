@@ -1,3 +1,7 @@
+:root {
+  --loader-color: #fff;
+}
+
 .titleWrapper {
   margin: 42px 0;
 }

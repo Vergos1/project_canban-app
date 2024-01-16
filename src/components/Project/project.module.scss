@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.project {
+  border-radius: 8px;
+  border: 1px solid $secondary-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  @include transition(background 0.35s);
+
+  &:hover {
+    background-position: left top;
+
+    .projectArrowSign {
+      opacity: 1;
+
+    }
+  }
+
+
+}
+
+.projectContent {
+  display: grid;
+  justify-content: center;
+  gap: 16px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  border-radius: 8px;
+  backdrop-filter: blur(2px);
+}
+
+.projectTitle {
+  @include flex-v-center;
+  gap: 10px;
+  color: $selected-color;
+  font-size: 18px;
+}
+
+.projectArrowSign {
+  @include transition(opacity 0.25s);
+  opacity: 0;
+  display: flex;
+}
+
+.projectDescription {
+  color: $default-color;
+}

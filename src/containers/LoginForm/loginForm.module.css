@@ -1,0 +1,25 @@
+:root {
+  --loader-color: #fff;
+}
+
+.link {
+  font-weight: 600;
+  color: #64596E;
+  transition: 0.25s ease;
+}
+.link:hover {
+  color: #ffffff;
+}
+
+.buttonSubmit {
+  background: #2F2752;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 10px 32px;
+  transition: 0.3s;
+}
+.buttonSubmit:hover {
+  background: #2A2132;
+}
+
+/*# sourceMappingURL=loginForm.module.css.map */

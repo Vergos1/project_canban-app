@@ -1,0 +1,16 @@
+@import "../../styles/mixins";
+
+.boardWrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mobile-sm {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

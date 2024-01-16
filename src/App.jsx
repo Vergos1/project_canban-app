@@ -7,25 +7,28 @@ import Layout from './Layout.jsx';
 
 
 
+
 const HomePage = lazy(() => import('./pages/HomePage/HomePage.jsx'));
+const BoardPage = lazy(() => import('./pages/BoardPage/BoardPage.jsx'));
 const LoginPage = lazy(() => import('./pages/LoginPage/LoginPage.jsx'));
 const RegistrationPage = lazy(() => import('./pages/RegistrationPage/RegistrationPage.jsx'));
 
 function App() {
 
-  return (
-    <>
+   return (
+   <>
       <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path='/' element={<Layout />}>
-            <Route index element={<HomePage />} />
-            <Route path={'/login'} element={<LoginPage />} />
-            <Route path={'/registration'} element={<RegistrationPage />} />
-          </Route>
-        </Routes>
+         <Routes>
+            <Route path='/' element={<Layout />}>
+               <Route index element={<HomePage />} />
+               <Route path={'/login'} element={<LoginPage />} />
+               <Route path={'/registration'} element={<RegistrationPage />} />
+               <Route path={'/board'} element={<BoardPage />} />
+            </Route>
+         </Routes>
       </Suspense>
-    </>
-  );
+   </>
+   );
 }
 
 export default App;

@@ -1,3 +1,7 @@
+:root {
+  --loader-color: #fff;
+}
+
 .header {
   min-width: 100vw;
   padding: 20px 0;
@@ -79,8 +83,8 @@
   align-items: center;
   gap: 5px;
   margin-left: auto;
-  border-radius: 8px;
-  padding: 2px 8px;
+  border-radius: 100%;
+  padding: 2px 2px;
   cursor: pointer;
   border: 2px solid #2A2132;
 }

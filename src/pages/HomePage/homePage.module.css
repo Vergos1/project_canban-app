@@ -1,3 +1,7 @@
+:root {
+  --loader-color: #fff;
+}
+
 .homePage {
   padding-bottom: 100px;
 }

@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.link {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.buttonSubmit {
+  background: $button-background-color;
+  color: $selected-color;
+  border-radius: 4px;
+  padding: 10px 32px;
+  transition: 0.3s;
+  width: 100%;
+  margin-top: 24px;
+
+  &:hover {
+    background: $button-hover-background-color;
+  }
+}
